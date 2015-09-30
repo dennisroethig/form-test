@@ -15,19 +15,17 @@
     <body>
         V3
         <form class="form">
-            <label for="name">Name on card</label>
-            <input type="text" name="ccname" value="" autocomplete="cc-name" id="name">
-            <br>
-            <label for="number">Card number</label>
-            <input type="tel" name="cardnumber" value="" autocomplete="cc-number" id="number">
-            <br>
-            <label for="exp">Expiry</label>
-            <input type="text" name="cc-exp" value="" autocomplete="cc-exp" id="exp">
-            <br>
-            <label for="cvc">CVC</label>
-            <input type="text" name="cvc" value="" autocomplete="off" id="cvc">
-            <br>
-            <button type="submit">PAY</button>
+            <label for="frmNameCC">Name on card</label>
+            <input name="ccname" id="frmNameCC" required placeholder="Full Name" autocomplete="cc-name">
+
+            <label for="frmCCNum">Card Number</label>
+            <input name="cardnumber" id="frmCCNum" required autocomplete="cc-number">
+
+            <label for="frmCCCVC">CVC</label>
+            <input name="cvc" id="frmCCCVC" required autocomplete="cc-csc">
+
+            <label for="frmCCExp">Expiry</label>
+            <input name="cc-exp" id="frmCCExp" required placeholder="MM-YYYY" autocomplete="cc-exp">
         </form>
     </body>
 </html>
